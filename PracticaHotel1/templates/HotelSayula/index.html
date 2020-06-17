@@ -1,0 +1,218 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/darkly.min.css">
+    <title>Hotel Sayula</title>
+    
+    <style type="text/css">
+        * {
+            margin:0px;
+            padding:0px;
+        }
+        
+        #header {
+            margin:auto;
+            width:1200px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        
+        ul, ol {
+            list-style:none;
+        }
+        
+        .nav > li {
+            float:left;
+        }
+        
+        .nav li a {
+            background-color:#000;
+            color:#fff;
+            text-decoration:none;
+            padding:10px 12px;
+            display:block;
+        }
+        
+        .nav li a:hover {
+            background-color:#434343;
+        }
+        
+        .nav li ul {
+            display:none;
+            position:absolute;
+            min-width:200px;
+        }
+        
+        .nav li:hover > ul {
+            display:block;
+        }
+        
+        .nav li ul li {
+            position:relative;
+        }
+        
+        .nav li ul li ul {
+            right:-200px;
+            top:0px;
+        }
+        
+    </style>
+</head>
+<body background="{% static 'img/fono.png' %}">
+    <img class="img-responsive" src="{% static 'img/fondo1.png' %}" width=100%
+    height="300">
+    {% if user.is_superuser %}
+    <div id="header">
+        <ul class="nav">
+            <li><a>Cliente</a>
+                <ul>
+                    <li><a href="añadir_cliente">Añadir</a></li>
+                    <li><a href="consultar_cliente">Consultar </a></li>
+                    
+                </ul>
+            </li>
+            <li><a>Pais</a>
+                <ul>
+                    <li><a href="añadir_pai">Añadir</a></li>
+                    <li><a href="consultar_pai">Consultar </a></li>
+                   
+                </ul>
+            </li>
+            <li><a>Recepcionista</a>
+                <ul>
+                    <li><a href="añadir_recepcionista">Añadir </a></li>
+                    <li><a href="consultar_recepcionista">Consultar </a></li>
+                    
+                </ul>
+            </li>
+            <li><a>Reservacion</a>
+                <ul>
+                    <li><a href="añadir_reservacione">Añadir </a></li>
+                    <li><a href="consultar_reservacione">Consultar </a></li>
+                   
+                </ul>
+            </li>
+            <li><a>Estado</a>
+                <ul>
+                    <li><a href="añadir_estado">Añadir </a></li>
+                    <li><a href="consultar_estado">Consultar </a></li>
+                   
+                </ul>
+            </li>
+            <li><a>Ciudad</a>
+                <ul>
+                    <li><a href="añadir_ciudade">Añadir </a></li>
+                    <li><a href="consultar_ciudade" >Consultar </a></li>
+                    
+                </ul>
+            </li>
+            <li><a>Habitacion</a>
+                <ul>
+                    <li><a href="añadir_habitacione">Añadir </a></li>
+                    <li><a href="consultar_habitacione">Consultar </a></li>
+                    
+                </ul>
+            </li>
+           
+            <li><a>Respaldos</a>
+                <ul>
+                    <li><a href="respalda">Crear Respaldo</a></li>
+                </ul>
+            </li>
+            <li><a href="{% url 'logout' %}">Salir</a>
+            <li><a href="/admin">Admin</a>
+            
+            </li>
+        </ul>
+    </div>
+    {% else  %}
+    <div id="header">
+            <ul class="nav">
+                <li><a>Cliente</a>
+                    <ul>
+                        <li><a href=" añadir_cliente">Añadir </a></li>
+                        <li><a href="consultar_cliente">Consultar </a></li>
+                    </ul>
+                </li>
+                <li><a>Pai</a>
+                    <ul>
+                        <li><a href="añadir_pai">Añadir </a></li>
+                        <li><a href="consultar_pai">Consultar </a></li>
+                    </ul>
+                </li>
+                <li><a>Reservacion</a>
+                    <ul>
+                        <li><a href="añadir_reservacione">Añadir </a></li>
+                        <li><a href="consultar_reservacione">Consultar </a></li>
+                    </ul>
+                </li>
+                <li><a>Recepcionista</a>
+                    <ul>
+                        <li><a href="añadir_recepcionista">Añadir </a></li>
+                        <li><a href="consultar_recepcionista">Consultar </a></li>
+                    </ul>
+                </li>
+                <li><a>Estado</a>
+                    <ul>
+                        <li><a href="añadir_estado">Añadir </a></li>
+                        <li><a href="consultar_estado">Consultar </a></li>
+                    </ul>
+                </li>
+                <li><a>Ciudad</a>
+                    <ul>
+                        <li><a href="añadir_ciudade">Añadir </a></li>
+                        <li><a href="consultar_ciudade" >Consultar </a></li>
+                    </ul>
+                </li>
+                <li><a>Habitacion</a>
+                    <ul>
+                        <li><a href="añadir_habitacione">Añadir </a></li>
+                        <li><a href="consultar_habitacione">Consultar </a></li>
+                    </ul>
+                </li>
+               
+                
+                <li><a href="{% url 'logout' %}">Salir</a>
+                </li>
+            </ul>
+        </div>
+        <br><br><br><br>
+        
+        {% endif %}
+        <br><br><br><br>
+        <br><br><br><br>
+        <form style="color: white" method="POST" action="http://localhost:8000/index/">
+            {% csrf_token %}
+            <div class="form-group row">
+                <label for="id_id_usuario" class="col-sm-2 col-form-label col-form-label-lg">Nombre de usuario</label>
+                <div class="col-sm-10">
+                    <input type="text" name="username" required maxlength="15" placeholder="A quien?" autocomplete="off"  class="form-control form-control-lg" placeholder="">
+                </div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <label  ><input type="checkbox"  name="perm1" value="add" > Agregar </label><br>
+            <label  ><input type="checkbox"  name="perm2" value="view" > Ver </label><br>
+            <label  ><input type="checkbox"  name="perm3" value="change" > Modificar </label><br>
+            <label  ><input type="checkbox"  name="perm4" value="delete" > Eliminar </label><br>
+            <button type="submit" class="btn btn-primary mb-2">Asignar permisos</button>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                <div class="form-group">
+                    <li><h3><a>¿desea agregar un usuario?</a></h3>
+                        <ul>
+                            <li><h4><a href="/crear_usuario">Creala</a></h4></li>
+                        </ul>
+                    </li>
+
+
+        </form>
+        <br><br><br><br>
+     
+    <h2><label style="color: #000;">Bienvenido : {{ user.username | upper }}</label></h2>
+    
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+.counter-minus,  .counter-plus {
+  text-align: center;
+}
+
+.btn {
+  width: 35px;
+  height: 35px;
+  padding: 3% 6% 4% 6%;
+  font-size: 2vw;
+  font-weight: 900;
+  border: 3px transparent;
+  color: black;/*PLUS & MINUS #fff*/
+}
+
+.btn:disabled, .btn:disabled:hover {
+  background-color: #D5D3D3; /*MINUS BACKGROUND | #8A364D*/
+}
+
+.btn-primary {
+  background-color: #BABABA; /* PLUS BACKGROUND | #EA4370*/
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #BABABA; /* #D3305C*/
+  outline: 0;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/darkly.min.css">
+    <title>Consultar</title>
+</head>
+<body>
+    <h4><a href="/index">Pagina de inicio</a></h4>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>Id_Empleado</td>
+                <td>Nombre_R</td>
+                <td>AP_R</td>
+                <td>AM_R</td>
+                <td>Turno</td>
+             
+            </tr>
+        </thead>
+        <tbody>
+            {% if object_list %}
+            {% for recepcionista in object_list %}
+            <tr>
+                <td>{{recepcionista.Id_Empleado}}</td>
+                <td>{{recepcionista.Nombre_R}}</td>
+                <td>{{recepcionista.AP_R}}</td>
+                <td>{{recepcionista.AM_R}}</td>
+                <td>{{recepcionista.Turno}}</td>
+                <td>
+                    {% if perms.HotelSayula.change_recepcionista %}
+                        <a class="btn btn-primary" href="{% url 'modi_recepcionista' recepcionista.Id_Empleado %}">Editar</a>
+                    {% endif %}
+                    {% if perms.HotelSayula.delete_recepcionista %}
+                        <a class="btn btn-danger" href="{% url 'eli_recepcionista' recepcionista.Id_Empleado %}">Borrar</a>
+                    {% endif %}
+                            
+                </td>
+            </tr>
+            {% endfor %}
+
+            {% else %}
+            <h1>No hay registros</h1>
+
+            {% endif %}
+        </tbody>
+    </table>
+</body>
+</html>

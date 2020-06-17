@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--IMPORTANTE-->
+    <meta charset="utf-8">
+    <title> Mesón del Ánima</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/pickmeup.min.js"></script>
+    <script type="text/javascript" src="dist/handleCounter.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/pickmeup.css">
+    <link rel="stylesheet" type="text/css" href="css/counter.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="dist/jquery.scrollUp.js"></script>
+    <script type="text/javascript" src="dist/demo.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <img src="img/logoB1.png"/><img src="img/logo.png"/>
+        <h1 class="logo-text"><span></span></h1>
+      </div>
+      <i class="fa fa-bars menu-toggle"></i>
+      <ul class="nav">
+        <!--<li><a href="#">Hotel</a></li>-->
+        <li><a href="index.html">Hotel</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li>
+          <a href="#">
+            <i class="fa fa-user"></i>
+              Mis reservas
+            <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+          </a>
+          <ul class='menuFlotante'>
+            <li><a href="bb.html">check-in online</a></li>
+            <li><a href="extra.html" class="logout">Gestion de reservas</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <!-- end-header -->
+    <!--Slider-->
+    <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/mesonDelAnima.png" alt="" width="" height="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Sayula1.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/centro.png" alt="">
+        </div>
+      </div>
+       <!--Controles NEXT y PREV -->
+      <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+    </div>
+    <br>
+    <br>
+    <!--//End Carousel-->
+    <center>
+      <h3>Reserva ahora</h3>
+    </center>
+    <!--
+    <section class="tm-main">
+           <p>Booking</p>
+    </section>-->
+    <section class="tm-booking">
+      <form>
+        <div class="tm-form1">
+          <h3>Reservaciones</h3>
+          <input class="redondeado" type="text" name="name" placeholder="Nombre"> <!-- NAME -->
+          <br>
+          <br>
+          <input class="redondeado" type="text" name="name" placeholder="e-mail"> <!-- NAME -->
+          <!--EXTRA-->
+          <!--EXTRA END-->
+          <label class="label-box" for="rooms" id="inlinelable"><h3>Tipo de habitación</h3></label>
+          <select name="Rooms" id="rooms">
+            <option value="luxurys">Selecciona tipo de cuarto</option> <!-- SELECT OPTIONS -->
+            <option value="deluxs">Master Suite</option>
+            <option value="premiers">Habitación Doble</option>
+            <option value="Luxuryr">Junior Suite</option>
+          </select>
+          <div class="tm-num1" id="handleCounter1">
+            <label for="number1"><h3>Numero de habitaciones</h3></label>
+            <br/>
+            <button type="button" class="counter-minus btn btn-primary"><h3>-</h3></button>
+            <input type="text" name="number1" id="number1" value="1">
+            <button type="button" class="counter-plus btn btn-primary"><h3>+</h3></button>
+          </div>
+          <div class="tm-num2" id="handleCounter2">
+            <label for="number2"><h3>Huéspedes</h3></label><br/>
+            <button type="button" class="counter-minus btn btn-primary"><h3>-</h3></button>
+            <input type="text" name="number2" id="number2" value="1">
+            <button type="button" class="counter-plus btn btn-primary"><h3>+</h3></button>
+          </div>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="tm-form2">
+          <div class="tm-cl">
+            <label for="date1" class="arrival"><h3>Fechas(opcionales)</h3></label>
+            <input type="text" name="date1" class="range" readonly="readonly">
+            </div>
+            <button type="button" class="boton"><h3>Reserva</h3></button>
+        </div>
+        <br>
+        <br>
+      </form>
+    </section>
+    <!-- //Footer -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="logo-text"><span><img src="img/logoBolita1.png"/><img src="img/logoLy.png"/></span></h1>
+          <div class="contact">
+            <span><i></i>Av Manual Avila Camacho 171 Oriente</span>
+            <span><i></i>Sayula Jalisco</span>
+            <span><i class="fas fa-phone"></i>332-508-3709</span>
+            <span><i class="fas fa-envelope"></i><!--&nbsp;-->hotel_meson_del_anima@hotmail.com</span>
+          </div> <!--FIN CONTACTO-->
+        </div>
+        <div class="footer-section links"> <!--section-->
+          <h2>Contacto</h2>
+          <br>
+          <ul>
+            <a href="ubicacion.html"><li>Ubicación</li></a>
+            <a href="index.html"><li>Hotel</li></a>
+            <a href="bb.html"><li>Reservaciones</li></a>
+            <a href="#"><li>Terminos y condiciones</li></a>
+          </ul>
+        </div>
+        <div class="footer-section contact-form">
+          <h2>Corporativo</h2>
+          <br/>
+          <p>Hotel Mesón del Ánima con tarifas accesibles, para representantes de ventas, ejecutivos, grupos y familias. Cuenta con estacionamiento y Wifi.</p>
+          <div class="socials">
+            <a href="https://www.facebook.com/HotelMesonDelAnimaSayula/"><img src="img/facebook.png"/></a> <!--AGREGAR ICONO-->
+            <a href="#"><img src="img/gmail.png"/></a>
+            <a href="#"><img src="img/w.png"/></a>
+            <a href="#"><img src="img/twitter2.png"/></i></a>
+          </div>
+          <!--<form class="" action="index.html" method="post">
+            <input type="email" name="email" class="text-input contact-input" placeholder="Your email address">
+            <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+            <button type="submit" name="button" class="btn btn-big contact-btn">
+              <i class="fas fa-envelope"></i>
+              Send
+            </button>-->
+          </form>
+        </div>
+      </div>
+      <div class="footer-botton">&copy; mesondelanima.com | La leyenda del descanso </div>
+    </div>
+    <!-- //Footer ends -->
+    <!-- //Optional JavaScript -->
+    <!-- //jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      //$('.carousel').carousel();
+    </script>
+  </body>
+</html>

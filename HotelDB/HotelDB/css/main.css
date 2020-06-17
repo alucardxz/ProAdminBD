@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=News+Cycle&family=Nunito+Sans&display=swap');
+html,
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: #F3F1F1;
+}
+
+/* -------------- header ----------------- */
+header {
+  background: #3E3E3E; /*COLOR DE NAV | */
+  height: 66px;
+  font-family: 'Lora', serif;
+}
+
+header * {
+  color: black; /*inspites*/
+}
+
+.logo {
+  float: left;
+  height: inherit;/*para poder tener la mima estarura que mi anterior*/
+  margin-left: 2em;
+}
+
+.logo-text {
+  margin: 9px;
+  font-family: 'Quicksand', sans-serif; /*Principal*/
+}
+
+.logo-text span { /*BEFORE .LOGO*/
+  color: #F1F1F6;/*AWA COLOR  #EDF1F4    #DCE0E3*/
+}
+
+header ul {
+  /*font-family: 'Shadows Into Light', sans-serif; Home font-family*/
+  font-family: 'Manrope', sans-serif;
+  font-size: 17px;
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  /*border: 1px solid red;*/
+
+}
+
+header ul li {
+  float: left;
+}
+
+header ul li ul {
+  position: absolute;
+  top: 66px;
+  right: 0px;
+  width: 180px;
+  display: none;
+}
+
+header ul li:hover ul {
+  display: block;
+}
+
+header ul li ul li {
+  width: 100%;
+}
+
+header ul li ul li a {
+  padding: 10px;
+  background: white;/*slider*/
+  color: black;/*letra*/
+  text-decoration: none;
+}
+
+header ul li ul li a.logout {
+  /*color: red;*/
+}
+
+header ul li ul li a:hover {
+  background: #d5d6d6;
+}
+
+header ul li a { /*HOME*/
+  display: block;
+  padding: 21px;
+  font-size: 1.1em;
+  color: #F1F1F6;/*letras home*/
+}
+
+header .menu-toggle {
+  display: none;
+}
+
+.menuFlotante {
+  z-index: 5;
+}
+/* -------------------------- fin header -------------------------- */
+/* -------------------------- slider -------------------------- */
+.tm-slider {
+  position: relative;
+}
+
+.tm-sliderimage {
+  width: 100%;
+  display: block;
+}
+
+.bold {
+  padding-bottom: 5px;
+  font-size: 3vw;
+  font-weight: 900;
+}
+
+.simple {
+  font-size: 2.5vw;
+}
+
+.tm-slidertext {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  color: #fff;
+}
+/* room */
+.tm-rooms:focus {
+  outline: none;
+}
+
+.tm-rooms a:focus {
+  outline: none;
+}
+
+.tm-rooms {
+  display: block;
+  background: #353535;
+  max-width: 33.33%;
+  width: 33.33%;
+}
+
+.tm-rooms img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.tm-rooms p {
+  font-size: 2.5vw;
+  color: #fff;
+  text-align: center;
+  padding: 5%;
+}
+
+.tm-rooms a {
+  text-decoration: none;
+}
+
+.tm-rooms a p:hover {
+  color: #ec3c6a;
+}
+
+.s {
+  padding-bottom: 1%;
+}
+
+.flex {
+  display: flex;
+}
+/*-------------------------------services------------------------------------*/
+.tm-service {
+  max-width: 30%;
+  width: 30%;
+  margin: 1.5% 12% 1.5% 10%;
+}
+
+.tm-servicesection {
+  display: flex;
+}
+
+.tm-serimage {
+  display: inline-block;
+  max-width: 20%;
+  width: 10%;
+  height: auto;
+  padding-bottom: 10%;
+}
+
+.tm-service div {
+  display: inline-block;
+  max-width: 75%;
+  padding: 5%;
+}
+
+.tm-service p {
+  font-size: 1.5vmax;
+}
+.tm-service .b{
+  padding-bottom: 2%;
+  font-weight: 700;
+}
+/*----------------------------------review------------------------------------*/
+.tm-review {
+  background: #F7F7F7;
+  padding-bottom: 5%;
+}
+
+.tm-review::after {
+  content:" ";
+  display: block;
+  clear: both;
+}
+
+.tm-revcon {
+  float: left;
+  padding-left: 5%;
+  max-width: 65%;
+}
+
+.tm-revcon .b {
+  padding: 3% 0 3% 5%;
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+.tm-revcon p {
+  font-size: 1.5vw;
+  color: #fff;
+}
+
+.tm-rev {
+  padding: 3% 0 0% 5%;
+  max-width: 70%;
+}
+.tm-stars {
+  display: block;
+  padding-left: 5%;
+}
+.tm-stars img {
+  width: 4%;
+  height: auto;
+}
+/*--------------------------------Make reservation----------------------------*/
+.tm-res {
+  background: #FFFEFE;  /*colo de reservacion*/
+  padding: 2%;
+}
+
+.tm-resbutton p {
+  display: table;
+  max-width: 30%;
+  margin: 0 auto;
+  font-size: 2.5vw;
+  padding: 2%;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid #fff;
+}
+
+.tm-resbutton a {
+  text-decoration: none;
+}
+
+.tm-resbutton p:hover {
+  color: #ec3c6a;
+  background: #fff;
+}
+/* Explore page */
+
+.tm-main {
+    background: ;
+    padding: 2%;
+}
+
+.tm-main p {
+  display: table;
+  max-width: 30%;
+  margin: 0 auto;
+  font-size: 4vw;
+  padding: 2%;
+  color: #fff;
+  font-weight: 700;
+}
+/*-------------------------------Explore sections-----------------------------*/
+.tm-exp1, .tm-exp2 {
+  background: #F3F1F1; /*#353535*/
+}
+
+.tm-exp1::after {
+  content:" ";
+  display: block;
+  clear: both;
+}
+
+.tm-exp2::after {
+  content:" ";
+  display: block;
+  clear: both;
+}
+
+.tm-exp1 p {
+  float: right;
+  padding-right: 5%;
+  padding-top: 15%;
+  max-width: 30%;
+  font-size: 3.5vw;
+  color: #fff;
+}
+
+.tm-exp2 p {
+  float: left;
+  padding-left: 5%;
+  padding-top: 15%;
+  max-width: 30%;
+  font-size: 3.5vw;
+  color: #fff;
+}
+
+.tm-exp1 img {
+  display: block;
+  float: left;
+  max-width: 60%;
+  width: 60%;
+  height: auto;
+}
+
+.tm-exp2 img {
+  display: block;
+  float: right;
+  max-width: 60%;
+  width: 60%;
+  height: auto;
+}
+
+.tm-expsection::after {
+  content: ".";
+  font-size: xx-small;
+  visibility: hidden;
+}
+/* -------------------------HABITACIONES page--------------------------------*/
+.tm-roomsection {
+  display: flex;
+}
+
+.tm-room1 {
+  max-width: 33.33333%;
+  width: 33.333333%;
+  background: #565656; /*353535 Cuartos Line*/
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+}
+
+.tm-room1 p {
+  font-size: 2.5vw;
+  color: #FFF;
+  text-align: center;
+  padding: 5%;
+  z-index: 2;
+  position: relative;
+}
+
+.tm-roomimage {
+  max-width: 100%;
+  width: 100%;
+}
+
+.tm-trans {
+  display: inline-block;
+  position: absolute;
+  top: 78%; /*78*/
+  color: #FFF;
+  max-width: 100%;
+  width: 100%;
+  height: 0%; /*0*/
+  background: rgba(53, 53, 53,0.7); /*F1F0F0*/
+  opacity: 0; /*0*/
+}
+
+.tm-trans p {
+  font-size: 1.8vw;
+
+}
+
+.tm-trans div {
+  display: inline-table;
+  width: 40%;
+  max-width: 40%;
+  margin: 2%;
+}
+
+.tm-trans div .bold { /*PRECIO*/
+  color: #DAD7D7;
+}
+
+.tm-room1:hover .tm-trans {
+  top:30%;
+  transition: top 1s, opacity 1s, height 1s;
+  opacity: 1;
+  height: 50%;
+  z-index: 1;
+}
+/*----------------------------booking---------------------------------------*/
+.tm-booking {
+  background: #F3F2F2;
+  position: relative;
+}
+
+.tm-form1, .tm-form2 {
+  padding: 2% 5%;
+}
+
+div.vertical-line {
+  width: 0.15%;
+  background-color: #3F3F3F;
+  height: 90%;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+}
+
+.tm-form1 {
+  float:left;
+  max-width: 40%;
+  width: 40%;
+  background-color: #F3F2F2; /*CAJACHANGE COLOR */
+}
+/*rec*/
+h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #6A6767;
+}
+
+.redondeado {
+  border-radius: 5px;
+  height: 50px;
+  width: 350px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;;
+  border: 2px solid #AAA;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: .3s;
+ }
+ /*date-box*/
+ .range {
+   font-size: 2vw;
+   font-family: 'Montserrat', sans-serif;
+   border: 2px solid #AAA;
+   margin-top: 10%;
+   margin-bottom: 40%;
+   padding: 2% 4%;
+   width: 120%;
+   border-radius: 8px;
+ }
+
+ .boton {
+   border-radius: 8px;
+   height: 50px;
+   width: 250px;
+   margin: 100px 50px 100px;
+ }
+ /**/
+/*rec*/
+.tm-form2 {
+  padding: 2% 14% 2%;
+  float:right;
+  background-color: #F3F2F2;
+}
+
+input, select, textarea,
+input::-webkit-input-placeholder {
+  font-size: 2vw;
+}
+
+input, select, textarea {
+  color: black; /*LETRA DE SELECCIONAR TIPO#ec3d68*/
+}
+
+input::-webkit-input-placeholder {
+  color: black; /*#f17c94*/
+}
+
+textarea::-webkit-input-placeholder {
+  color: black; /*#f17c94*/
+}
+
+label {
+  font-size: 2vw;
+  color: #fff;
+  font-weight: 700;
+}
+
+.tm-booking::after {
+  content:" ";
+  display: block;
+  clear: both;
+}
+
+input[type=text]:nth-child(1),input[type=email],textarea {
+  display: block;
+  margin: 5%;
+  padding: 1% 3%;
+  width: 80%;
+}
+
+textarea {
+  max-width: 80% ;
+  resize: none;
+
+}
+
+#rooms {
+  display: inline-block;
+  /*
+  margin: 5%;
+  padding: 1% 3%;
+  width: 55%;*/
+  border-radius: 5px;
+  height: 50px;
+  width: 350px;
+}
+
+#inlinelable {
+  display: inline-block;
+  margin: 5%;
+}
+
+.tm-num1, .tm-num2 {
+  display: inline-block;
+  max-width: 39%;
+  width: 39%;
+  margin: 5%;
+}
+
+#number1 , #number2 {
+  width:30%;
+  padding: 3% 8%;
+  margin-top: 5%;
+  text-align: center;
+  border-radius: 4px;
+  background: #6A6767; /*CAJA DE NUMERO*/
+  color: #EEEDED;
+}
+
+input[type=submit] {
+  display: block;
+  background: #D5D3D3;
+  padding: 1% 3%;
+  color: #fff;
+  border: 50px solid #fff; /*BOTON Proceed*/
+}
+
+#sub {
+  margin-left: 70%;
+}
+
+#sub2 {
+  margin-left: 5%;
+}
+
+input[type=submit]:hover {
+  color: #ec3d68;
+  border: 1px solid #ec3d68;
+
+}
+
+input[type=submit]:focus {
+  outline: none;
+}
+
+.arrival {
+  display: block;
+  margin-top: 5%;
+}
+
+.here {
+  display: inline-block;
+  margin-top: 5%;
+  font-size: 2vw;
+  color: #fff;
+  font-weight: 700;
+}
+
+#place {
+  margin-top: 5%;
+  margin-left: 3%;
+  width:5%;
+  max-width: 5%;
+}
+
+#map {
+  margin-top: 5%;
+  height: 335px;
+  width: 80%;
+}
+
+.tm-imgslider {
+  position: relative;
+}
+
+.left, .right {
+  position: absolute;
+  width: 1.5%;
+  max-width: 1.5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
+  opacity:0;
+}
+
+.left:hover, .right:hover {
+  opacity:1;
+  -webkit-transition: opacity .25s ease-in-out .0s;
+  transition: opacity .25s ease-in-out .0s;
+}
+
+.left {
+  top: 10%;
+  left: 1%;
+}
+
+.right {
+  top: 10%;
+  right: 1%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+/*-------------------------Reservacion end------------------------------------*/
+/* ------------------------ slider -------------------------- */
+/* ------------------------ card habitaciones -------------------------- */
+.title {
+  text-align: center;
+  font-size: 40px;
+  color: #6A6A6A;
+  margin-top: 100px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;/*comp-h1*/
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.container .card {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+  width: 330px;
+  height: 220px;
+}
+
+.card h4 {
+  font-weight: 600;
+}
+
+.card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498DB;
+}
+/* ------------------------ fin card habitaciones ----------------- */
+/* ------------------------ Reserva separacion ----------------------*/
+.btn-center {
+  text-align: center;
+}
+/* ------------------------ Fin reserva separacion  ---------------------- */
+
+/* ------------------------ Card y H2 -------------------------- */
+.inspirate {
+  color: #384044;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-reserva {
+  color: #F0F3F6;
+  text-decoration: none;
+}
+
+/* ------------------------ fin card -------------------------- */
+/* -------------------------- footer ----------------------------- */
+.footer {
+  background-color: #3E3E3E;
+  color: #D5D8DC;
+  height: 400px;
+  position: relative;
+}
+
+.footer .footer-content {
+  /*border: 1px solid red;*/
+  height: 350px;
+  display: flex;
+}
+
+.footer .footer-content .footer-section {
+  flex: 1; /*Se dara un espacio horizontal*/
+  padding: 25px;
+  /*border: 1px solid white;*/
+}
+
+.footer-content {
+  color: white;
+}
+
+.about h1 span {
+  color: #05f7ff;
+}
+
+.contact span {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.socials a {
+  border: 1px solid gray;
+  width: 45px;
+  height: 41px;
+  padding-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  border-radius: 5px;
+  transition: all .3s;
+}
+
+.socials a:hover {
+  border: 1px solid white;
+  color: white;
+  transition: all .3s;
+}
+
+.links ul a {   /*Modificar LI*/
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  transition: all .3s;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+.links ul a:hover { /*ANTES DE .LINK -> .FOOTER .FOOTER-CONTENT*/
+  color: white;
+  margin-left: 15px;
+  transition: all .3s;
+}
+
+.contact-form .contact-input {
+  background: #272727;
+  color: #bebdbd;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+  padding: .9rem 1.4rem;
+  border: none;
+}
+
+.contact-form .contact-input:focus {
+  background: #1a1a1a;
+}
+
+.contact-form contact-btn { /*BOTON*/
+  float: right;
+}
+
+.footer-botton {
+  background-color: #2A2929;
+  color: #686868;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+/* -------------------------- footer ----------------------------- */
+
+
+/* footer
+
+.tm-footer{
+     background: #211f17;
+    display: block;
+    padding: 20px;
+    position: relative;
+
+}
+
+.tm-us{
+    display: inline-table;
+    max-width: 30%;
+    width: 30%;
+    margin: 2% 0 2% 4%
+}
+
+.tm-address{
+    display: inline-table;
+    max-width: 30%;
+    width: 30%;
+     margin: 2% 0 2% 25%
+}
+
+.tm-us .bold, .tm-address .bold{
+    color: #ec3c6a;
+    font-size: 1.5vw;
+    font-weight: 700;
+    padding-bottom: 4%;
+}
+
+.tm-us p, .tm-address p{
+    color: #fff;
+    font-size: 1.2vw;
+}
+
+.tm-media{
+   display: inline;
+    margin: 0 0 0 59%;
+
+
+}
+.tm-media img{
+  margin: 0.5%;
+    width: 3%;
+    height: auto;
+
+}
+
+.tm-up
+{
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    width: 3%;
+    height: auto;
+
+}
+
+.tm-review:focus{
+    outline: none;
+}
+
+.tm-revcon:focus{
+    outline: none;
+}*/
+
+
+
+
+/*
+.tm-list::after{
+    content: url("../images/circle.png");
+
+
+}
+*/
+/*header ends here and sections start*/

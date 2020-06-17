@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Mesón del Ánima</title>
+    <!-- //LINKS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"> <!-- //SLIDER -->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/slider.js"></script>
+    <script type="text/javascript" src="dist/jquery.scrollUp.js"></script>
+    <script type="text/javascript" src="dist/demo.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- //HotelPractica-->
+    <!-- //Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <img src="img/logoB1.png"/><img src="img/logo.png"/>
+        <h1 class="logo-text"><span></span></h1>
+      </div>
+      <i class="fa fa-bars menu-toggle"></i>
+      <ul class="nav">
+        <!--<li><a href="#">Hotel</a></li>-->
+        <li><a href="index.html">Hotel</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li>
+          <a href="#">
+            <i class="fa fa-user"></i>
+              Mis reservas
+            <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+          </a>
+          <ul class='menuFlotante'>
+            <li><a href="reserva.html">check-in online</a></li>
+            <li><a href="extra.html" class="logout">Gestion de reservas</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <!-- end-header -->
+    <section class="tm-booking">
+      <form>
+        <div class="tm-form1">
+          <h3>Reservaciones</h3>
+          <input class="redondeado" type="text" name="name" placeholder="Nombre"> <!-- NAME -->
+          <br>
+          <br>
+          <input class="redondeado" type="text" name="name" placeholder="e-mail"> <!-- NAME -->
+
+        </div>
+      </form>
+    </section>
+    <section>
+      <center>
+        <div class="tm-cl">
+          <br>
+          <br>
+          <h3>Ubicación</h3>
+          <br>
+          <br>
+          <img src="img/mapa.jpg" alt="">
+          <div id="map"></div>
+        </div>
+      </center>
+    </section>
+    <!-- //Footer -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="logo-text"><span><img src="img/logoBolita1.png"/><img src="img/logoLy.png"/></span></h1>
+          <div class="contact">
+            <span><i></i>Av Manual Avila Camacho 171 Oriente</span>
+            <span><i></i>Sayula Jalisco</span>
+            <span><i class="fas fa-phone"></i>332-508-3709</span>
+            <span><i class="fas fa-envelope"></i><!--&nbsp;-->hotel_meson_del_anima@hotmail.com</span>
+          </div> <!--FIN CONTACTO-->
+        </div>
+        <div class="footer-section links"> <!--section-->
+          <h2>Contacto</h2>
+          <br>
+          <ul>
+            <a href="ubicacion.html"><li>Ubicación</li></a>
+            <a href="index.html"><li>Hotel</li></a>
+            <a href="reserva.html"><li>Reservaciones</li></a>
+            <a href="#"><li>Terminos y condiciones</li></a>
+          </ul>
+        </div>
+        <div class="footer-section contact-form">
+          <h2>Corporativo</h2>
+          <br/>
+          <p>Hotel Mesón del Ánima con tarifas accesibles, para representantes de ventas, ejecutivos, grupos y familias. Cuenta con estacionamiento y Wifi.</p>
+          <div class="socials">
+            <a href="https://www.facebook.com/HotelMesonDelAnimaSayula/"><img src="img/facebook.png"/></a> <!--AGREGAR ICONO-->
+            <a href="#"><img src="img/gmail.png"/></a>
+            <a href="#"><img src="img/w.png"/></a>
+            <a href="#"><img src="img/twitter2.png"/></i></a>
+          </div>
+          <!--<form class="" action="index.html" method="post">
+            <input type="email" name="email" class="text-input contact-input" placeholder="Your email address">
+            <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+            <button type="submit" name="button" class="btn btn-big contact-btn">
+              <i class="fas fa-envelope"></i>
+              Send
+            </button>-->
+          </form>
+        </div>
+      </div>
+      <div class="footer-botton">&copy; mesondelanima.com | La leyenda del descanso </div>
+    </div>
+    <!-- //Footer ends -->
+  </body>
+</html>

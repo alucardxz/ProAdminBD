@@ -1,0 +1,34 @@
+<!DOCTYPE html  {% load static %} >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/darkly.min.css">
+    <title>Añadir Ciudad</title>
+</head>
+<body>
+        
+    <div>
+        {% if perms.HotelSayula.add_ciudade %}
+        <h4><a href="/index">Pagina de inicio</a></h4>
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">
+                Guardar
+            </button>
+        </form>
+        {% else  %}
+        <center>
+                <h1>No tienes permiso :( </h1>
+                <h4><a href="/index">Pagina de inicio</a></h4>
+        
+        </center>
+        
+        {% endif %}
+            
+        </div>
+    
+</body>
+</html>

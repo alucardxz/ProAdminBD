@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Habitaciones</title>
+    <!-- //LINKS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"> <!-- //SLIDER -->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/slider.js"></script>
+    <script type="text/javascript" src="dist/jquery.scrollUp.js"></script>
+    <script type="text/javascript" src="dist/demo.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- //HotelPractica-->
+    <!-- //Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- //header -->
+    <header>
+      <div class="logo">
+        <img src="img/logoB1.png"/><img src="img/logo.png"/>
+        <h1 class="logo-text"><span></span></h1>
+      </div>
+      <i class="fa fa-bars menu-toggle"></i>
+      <ul class="nav">
+        <!--<li><a href="#">Hotel</a></li>-->
+        <li><a href="index.html">Hotel</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li>
+          <a href="#">
+            <i class="fa fa-user"></i>
+              Mis reservas
+            <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+          </a>
+          <ul class='menuFlotante'>
+            <li><a href="reserva.html">check-in online</a></li>
+            <li><a href="extra.html" class="logout">Gestion de reservas</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <!-- //header ends -->
+    <!--Slider-->
+    <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/piscina11.jpg" alt="" width="" height="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/piscina12.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/sala1.jpg" alt="">
+        </div>
+      </div>
+       <!--Controles NEXT y PREV -->
+      <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+    </div>
+    <!--//End Carousel-->
+    <!-- //Inspirate-->
+    <h1 class="title">Inspírate</h1>
+    <br/>
+    <!-- //CARD -->
+    <div class="card-deck">
+      <div class="card">
+        <img src="img/sayulaBonito.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sayula Jalisco</h5>
+          <p class="card-text">
+          Las tierras salitrosas de Sayula fueron muy codiciadas desde tiempos remotos por los tarascos, suscitándose entre éstos y los monarcas de Colima, aliados de los señores de Tonalá, Aztatlán y Jalisco, continuas y sangrientas luchas.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"></small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/hotel1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hotel mesón del ánima</h5>
+          <p class="card-text">Hotel mesón del ánima ubicado en Sayula Jalisco. El hotel mesón del ánima representa a la perfección todos los contrastes del bello Sayula, combinando descanso y entretenimiento con el más exquisito servicio de un hotel de tres estrellas.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"></small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/cajetaLugo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cajetas Lugo</h5>
+          <p class="card-text">Cajetas Lugo es una empresa que hemos edificado a lo largo de cuatro generaciones entre cazos de cobre, olores de leche acaramelada, vainilla y trozos de madera que, manos de artesanos convierten en envases. Te esperamos…</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"></small>
+        </div>
+      </div>
+    </div>
+    <!-- //Inspirate ends-->
+    <!-- //rooms -->
+    <h1 class="title">Hotel mesón del ánima habitaciones</h1>
+    <br/>
+    <section class="tm-roomsection">
+      <!-- //room1 -->
+      <div class="tm-room1">
+        <div class="tm-trans">
+          <div>
+            <p>1 cama</p>
+            <p>Sala comedor y cocineta</p>
+            <p>Wifi gratuito y TV</p>
+          </div>
+          <div>
+            <p>Precio</p>
+            <p class="bold">$ 1999.99</p>
+          </div>
+        </div>
+        <img class="tm-roomimage" src="img/BlancaDup.jpg">
+        <p class="s">Master Suite</p>
+      </div>
+      <!-- //room2 -->
+      <div class="tm-room1">
+        <div class="tm-trans">
+          <div>
+            <p>2 camas</p>
+            <p>Una amplitud ideal</p>
+            <p>Wifi y TV</p>
+          </div>
+          <div>
+            <p>Precio</p>
+            <p class="bold">$ 1599.99</p>
+          </div>
+        </div>
+        <img class="tm-roomimage" src="img/Roja.jpg">
+        <p>Habitación Doble</p>
+      </div>
+      <!-- //room3 -->
+      <div class="tm-room1">
+        <div class="tm-trans">
+          <div>
+            <p>2 Camas individuales</p>
+            <p>Cuenta con sala comedor, Wifi y TV</p>
+            <p></p>
+          </div>
+          <div>
+            <p>Precio</p>
+            <p class="bold">$ 1299.99</p>
+          </div>
+        </div>
+        <img class="tm-roomimage" src="img/Puntos.jpg">
+        <p>Habitación Junior Suite</p>
+      </div>
+    </section>
+    <!-- //Rooms ends -->
+    <br>
+    <br>
+    <br>
+    <h1 class="title">Servicios</h1>
+    <!--  //SECTION SERVICIOS -->
+    <section class="tm-servicesection">
+      <div class="tm-service">
+        <img class="tm-serimage" src="img/bell.png">
+        <div>
+          <p class="b">Servicio al cuarto</p>
+          <p>Puede abarcar desde el servicio de comida y bebida, hasta cualquier tipo de petición dependiendo de la oferta disponible.</p>
+        </div>
+      </div>
+      <div class="tm-service">
+        <img class="tm-serimage" src="img/coffee.png">
+        <div>
+          <p class="b">Desayunos</p>
+          <p>Diferentes tipos de desayunos: El desayuno continental en buffet o servido en raciones individuales, el desayuno inglés o el desayuno americano.</p>
+        </div>
+      </div>
+    </section>
+    <section class="tm-servicesection">
+      <div class="tm-service">
+        <img class="tm-serimage" src="img/car-front.png">
+        <div>
+          <p class="b">Estacionamiento</p>
+          <p>No es necesario pagar algún costo extra por el estacionamiento de su vehículo.</p>
+        </div>
+      </div>
+      <div class="tm-service">
+        <img class="tm-serimage" src="img/spa.png">
+        <div>
+          <p class="b">Spa</p>
+          <p>Relajará su cuerpo mente y espíritu obteniendo al mismo tiempo beneficios terapéuticos.</p>
+        </div>
+      </div>
+    </section>
+    <!-- //SECTION RESERVACION ENDS-->
+    <br/>
+    <!--
+    <section class="tm-makeres">
+      <div class="tm-res">
+        <div class="tm-resbutton">
+          <a href="reserva.html"><p>Make Reservation</p></a>
+        </div>
+      </div>
+    </section>
+    -->
+    <br/>
+    <br/>
+    <!-- //Footer -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="logo-text"><span><img src="img/logoBolita1.png"/><img src="img/logoLy.png"/></span></h1>
+          <div class="contact">
+            <span><i></i>Av Manual Avila Camacho 171 Oriente</span>
+            <span><i></i>Sayula Jalisco</span>
+            <span><i class="fas fa-phone"></i>332-508-3709</span>
+            <span><i class="fas fa-envelope"></i><!--&nbsp;-->hotel_meson_del_anima@hotmail.com</span>
+          </div> <!--FIN CONTACTO-->
+        </div>
+        <div class="footer-section links"> <!--section-->
+          <h2>Contacto</h2>
+          <br>
+          <ul>
+            <a href="ubicacion.html"><li>Ubicación</li></a>
+            <a href="index.html"><li>Hotel</li></a>
+            <a href="reserva.html"><li>Reservaciones</li></a>
+            <a href="#"><li>Terminos y condiciones</li></a>
+          </ul>
+        </div>
+        <div class="footer-section contact-form">
+          <h2>Corporativo</h2>
+          <br/>
+          <p>Hotel Mesón del Ánima con tarifas accesibles, para representantes de ventas, ejecutivos, grupos y familias. Cuenta con estacionamiento y Wifi.</p>
+          <div class="socials">
+            <a href="https://www.facebook.com/HotelMesonDelAnimaSayula/"><img src="img/facebook.png"/></a> <!--AGREGAR ICONO-->
+            <a href="#"><img src="img/gmail.png"/></a>
+            <a href="#"><img src="img/w.png"/></a>
+            <a href="#"><img src="img/twitter2.png"/></i></a>
+          </div>
+          <!--<form class="" action="index.html" method="post">
+            <input type="email" name="email" class="text-input contact-input" placeholder="Your email address">
+            <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+            <button type="submit" name="button" class="btn btn-big contact-btn">
+              <i class="fas fa-envelope"></i>
+              Send
+            </button>-->
+          </form>
+        </div>
+      </div>
+      <div class="footer-botton">&copy; mesondelanima.com | La leyenda del descanso </div>
+    </div>
+    <!-- //Footer ends -->
+    <!-- //Optional JavaScript -->
+    <!-- //jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      //$('.carousel').carousel();
+    </script>
+  </body>
+</html>
